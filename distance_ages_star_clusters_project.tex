@@ -1,4 +1,4 @@
-\documentclass[12pt, twocolumn]{article}
+\documentclass[12pt, twocolumn]{aastex62}
 
 % The geometry package allows for easy page formatting.
 \usepackage{geometry}
@@ -12,7 +12,9 @@
 
 % Packages and definitions for graphics files.
 \usepackage{graphicx}		% for managing images
-\graphicspath{ {./images/} }		% path of images
+%% Tells LaTeX to search for image files in the 
+%% current directory as well as in the figures/ folder.
+\graphicspath{{./}{figures/}}
 %\renewcommand{\arraystretch}{1.4}	% The height of each row is set to 1.5 relative to its default height.
 \usepackage{wrapfig}		% wrapping text around images
 \usepackage{epstopdf}
@@ -24,7 +26,9 @@
 \usepackage{amsmath, amsfonts, amsthm}
 \usepackage{amssymb}
 \usepackage{pgfplots}
-
+%% Command to document which AAS Journal the manuscript was submitted to.
+%% Adds "Submitted to " the arguement.
+\submitjournal{ApJ}
 
 %
 % Set the title, author, and date.
@@ -32,11 +36,12 @@
 \title{Distance and Ages of Star Clusters}
 \author{Karoki Anthony Mugambi}
 \date{}
-
 %
 % The document proper.
 %
 \begin{document}
+	
+	
 	\onecolumn
 	% Add the title section.
 	\maketitle
