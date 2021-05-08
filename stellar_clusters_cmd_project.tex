@@ -60,7 +60,8 @@
 	\maketitle
 	
 	\begin{abstract}
-		We take on a study if two types of star clusters to determine their age and distances. Using collected data, we will show how clusters can be used to measure the relative distances and ages of stars in the cluster. Optical and infrared data will be used to generate a CMD graph. In this exercise, you will determine the colour of many cluster members and plot them on a Colour-Magnitude diagram.%This is just a type of Hertzsprung-Russell (HR) diagram in which we plot Colour Index rather than Spectral Class on the horizontal axis; and use the apparent visual magnitude, V, for the vertical axis.
+		This is a photometric study on star clusters. The focus is on both open and globular clusters using data collected from actual star clusters that fall in each of those two star cluster categories. The photometric data collected, majorly optical and infrared data, is the essential ingredient in the construction of Colour-Magnitude Diagrams of each star cluster. Using isochrone models fitted onto the Colour-Magnitude Diagrams, approximate distances and ages of the star clusters are determined.
+		%We take on a study if two types of star clusters to determine their age and distances. Using collected data, we will show how clusters can be used to measure the relative distances and ages of stars in the cluster. Optical and infrared data will be used to generate a CMD graph. In this exercise, you will determine the colour of many cluster members and plot them on a Colour-Magnitude diagram.%This is just a type of Hertzsprung-Russell (HR) diagram in which we plot Colour Index rather than Spectral Class on the horizontal axis; and use the apparent visual magnitude, V, for the vertical axis.
 	\end{abstract}
 
 	\keywords{colour-magnitude diagrams, globular clusters, open clusters}
@@ -74,8 +75,9 @@
 	\pagebreak
 	\section{Introduction}
 	\label{sec:intro}
-	Most stars in the universe form in clusters. Star clusters are group of stars that share a common origin and are gravitationally bound together hence move collectively since their stellar motions are completely correlated and not random. The star clusters are formed at the same time and from the same gas cloud, and they thus have similar age and are found at a common distance as viewed from Earth. The common age and distance makes stellar clusters particularly important in studies and models of stellar evolution, stellar ages and luminosities. For this reason, photometric measurements can be used to determine the age of a cluster and its distance as viewed from Earth.\\
+	Most stars in the universe form in clusters (Lada \& Lada 2003). Star clusters are group of stars that share a common origin and are gravitationally bound together. The star clusters are formed at the same time and from the same gas cloud, and they thus have similar age and are found at a common relative distance as viewed from Earth. The common age and distance makes stellar clusters particularly important in studies and models of stellar evolution, stellar ages, metallicities and luminosities. For this reason, photometric measurements can be used to determine the age of a cluster and its distance as viewed from Earth.\\
 	The two basic categories of stellar clusters are open clusters and globular clusters.\\
+	%Globular clusters (GC) appear to have formed shortly after the Big Bang, so they are used by astronomers to investigate how the universe was long ago.  Color-magnitude diagrams (CMDs) can be used to determine the properties of GCs, including age and metallicity.  For this project, we constructed CMDs for three GCs using blue and infrared data from the Hubble Space Telescope.  CMD turnoff points were overlaid with isochrones (from Dartmouth) to estimate the age of each target.  By applying isochrone fitting and χ2 statistics, we have measured the ages of globular clusters M3, M54, and M80.
 		\subsection{Open Cluster}
 		Open clusters are diffuse star clusters hosting a few hundreds or thousands of stars. Individual component stars are easily resolved with telescopes hence the name open cluster. They are mostly found on the dusty spiral arms on the plane of spiral galaxies.\\
 		In this paper, we shall look at the open cluster Messier 7 (M7) or NGC 6475.
@@ -96,7 +98,9 @@
 	Our clusters of study are the M7 open cluster and M54 globular cluster.
 		\subsection{Terminology}
 		Apparent magnitude is a logarithmic measurement of the brightness of stars/celestial objects as viewed from Earth. It is based on how human eyes view different levels of brightness. It is denoted by \textbf{m} and measured in magnitudes.\\
-		Absolute magnitude is a measurement of a star's/celestial object's brightness if it were located at a distance of 10 parsecs. It is a measure of the true brightness. It is denoted by \textbf{M} and measured in magnitudes.
+		Absolute magnitude is a measurement of a star's/celestial object's brightness if it were located at a distance of 10 parsecs. It is a measure of the true brightness. It is denoted by \textbf{M} and measured in magnitudes.\\
+		Isochrones are adjustable models of data  sets.\\
+		Turn-off point is the phase where stars leave off the main sequence.
 		\subsection{Messier 7 Open Cluster}
 		\begin{wrapfigure}{l}{0.6\textwidth}
 			\includegraphics[width=0.58\textwidth]{m7_eso_0}
@@ -145,15 +149,15 @@
 	Our method of finding a star's brightness, among the many that exists, is aperture photometry.
 		\subsection{Database}
 		To get the data for the star clusters M7 and M54, we use the data archives from NASA/IPAC EXTRAGALACTIC DATABASE (NED) website. For each star cluster, the infrared data is found at the NASA/IPAC Infrared Science Archive page of the NED website. We get 2MASS Interactive Image Service Results where we download the J, K and H bands of the 2MASS Atlas images.
-		\subsection{Software and Tools}
-		Other than the relevant websites where data is downloaded, we also make use of various software programs to manipulate, analyze and make sense of the data collected.\\
-		For this study these tools are; SAOImageDS9 or simply DS9 and TOPCAT and APT.
-		\subsubsection{DS9}
-		This tool helps in astronomical imaging and data visualization.
-		\subsubsection{TOPCAT}
-		TOPCAT is an interactive graphical viewer and editor for tabular data. Its aim is to provide most of the facilities that astronomers need for analysis and manipulation of source catalogues and other tables, though it can be used for non-astronomical data as well.
-		\subsubsection{APT}
-		Aperture Photometry Tool (APT) is software with a graphical user interface for data and image visualization and computing aperture photometry on astronomical imagery. Image overlays, graphical representations, statistics, models, options and controls for aperture-photometry calculations are brought together into a single package.
+%		\subsection{Software and Tools}
+%		Other than the relevant websites where data is downloaded, we also make use of various software programs to manipulate, analyze and make sense of the data collected.\\
+%		For this study these tools are; SAOImageDS9 or simply DS9 and TOPCAT and APT.
+%		\subsubsection{DS9}
+%		This tool helps in astronomical imaging and data visualization.
+%		\subsubsection{TOPCAT}
+%		TOPCAT is an interactive graphical viewer and editor for tabular data. Its aim is to provide most of the facilities that astronomers need for analysis and manipulation of source catalogues and other tables, though it can be used for non-astronomical data as well.
+%		\subsubsection{APT}
+%		Aperture Photometry Tool (APT) is software with a graphical user interface for data and image visualization and computing aperture photometry on astronomical imagery. Image overlays, graphical representations, statistics, models, options and controls for aperture-photometry calculations are brought together into a single package.
 		\subsection{Data Analysis}
 		Having downloaded the J, H and K bands 2MASS images for each cluster, we move on to the data analysis procedures using the relevant software tools.\\
 		First, we open up DS9. We open up images from one cluster for instance the M7 open cluster and and observe and compare the J, H and K images.
@@ -292,10 +296,11 @@
 		\subsubsection{M54 Data Comparison}
 		Our established distance to M54 we found to be 23, 988.33 parsecs. The NED website data gives an estimated distance of 26, 800 parsecs or 87, 400 light years.\\
 		Our best isochrone fit for our CMD had an age of 13 Billion years; pretty much in accoradance with the NED website.
-		\section{Conclusion}
-		This work served as a proof of concept on how stellar cluster ages and distances can be determined from their luminosity. We observed measurements of ages and distances of two star clusters, the open cluster M7 and the globular cluster M54, based on stellar evolution calculations and isochrone fitting.\\
-		Our method of age and distance works satisfactorily.\\
-		Our overall conclusion is that studying star clusters using Colour Magnitude Diagrams and with appropriate theoretical methods of isochrone fitting can provide valuable new insights into stellar clusters as well as satisfactorily determine stellar distances and ages.
+	\section{Conclusion}
+	This work served as a proof of concept on how stellar cluster ages and distances can be determined from their luminosity. We observed measurements of ages and distances of two star clusters, the open cluster M7 and the globular cluster M54, based on stellar evolution calculations and isochrone fitting.\\
+	Our method of age and distance works satisfactorily. If we included metallicity, reddening offsets and corrected for earth's atmosphere, the calculations would be more accurate.\\
+	Our overall conclusion is that studying star clusters using Colour Magnitude Diagrams and with appropriate theoretical methods of isochrone fitting can provide valuable new insights into stellar clusters as well as satisfactorily determine stellar distances and ages.\\
+	Globular clusters are old while open clusters are younger.
 		
 	\pagebreak
 	\begin{thebibliography}{}
@@ -356,6 +361,11 @@
 		{\url{https://www.eso.org/public/images/eso1428a/}},
 		{[Online: accessed April 19, 2021]}
 		{[Release date: 10 September 2014, 12:00]}
+		
+		\bibitem{lada}
+		{Lada C. J., Lada E. A.},
+		{2003},
+		{ARA\&A, 41, 57}
 		
 	\end{thebibliography}
 

@@ -1,4 +1,9 @@
 ./*.gz
+./*log
+./*aux
+./*bcf
+./*auf
+./*toc
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
